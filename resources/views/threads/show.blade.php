@@ -13,5 +13,18 @@
             </div>
         </div>
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            @foreach($thread->replies as $reply)
+            <div class='panel panel-default'>
+                <div class="panel-body">
+                    {{$reply->body}}
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+
 </div>
 @endsection
